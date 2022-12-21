@@ -26,10 +26,10 @@ jobs :
       - name: CMake Build
         run: |
           cd ${{github.workspace}}
+          mkdir CMakeLists.txt
           ls
           mkdir build
           cd build
-          mkdir CMakeLists.txt
           cmake --version
           cmake -DCMAKE_INSTALL_PREFIX=${{github.workspace}} ../
           ls
