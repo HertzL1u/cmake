@@ -29,6 +29,7 @@ jobs :
           ls
           mkdir build
           cd build
+          mkdir CMakeLists.txt
           cmake --version
           cmake -DCMAKE_INSTALL_PREFIX=${{github.workspace}} ../
           ls
